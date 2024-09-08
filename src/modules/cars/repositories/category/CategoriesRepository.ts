@@ -1,10 +1,5 @@
-import { Category } from "../model/Category";
-
-// DTO - Data Transfer Object
-interface ICreateCategoryDTO {
-  name: string;
-  description: string;
-}
+import { Category } from "../../../../modules/cars/model/Category";
+import { ICreateCategoryDTO } from "./ICategoriesRepository";
 
 class CategoriesRepository {
 
