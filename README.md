@@ -10,7 +10,8 @@
 
 - ``yarn add uuid``: Permite a criação de id's.
 
-- Bibliotec ``multer``: Permite fazer upload e leitura de arquivos
+- ``yarn add multer``: Permite fazer upload e leitura de arquivos
+- ``yarn add @types/multer -D``: tipagens para o multer
 
 
 # Cadastro de carro
