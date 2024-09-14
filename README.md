@@ -12,6 +12,8 @@
 
 - ``yarn add multer``: Permite fazer upload e leitura de arquivos
 - ``yarn add @types/multer -D``: tipagens para o multer
+- ``yarn add csv-parse``: Permite a leitura do arquivo de forma mais gradativa (linha por linha) no exemplo com csv
+- ``yarn add @types/csv-parse -D``: tipagens para o csv-parse
 
 
 # Cadastro de carro
