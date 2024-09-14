@@ -1,3 +1,18 @@
+# Padrões Técnicos
+
+- ``yarn init -y``
+- ``yarn add express``
+- ``yarn add ts-node-dev -D``: Permite atualizar de forma automática ambiente local a cada alteração, sem necessidade de reiniciar o servidor.
+  * package.json:
+    ``"scripts": {
+      "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    }``
+
+- ``yarn add uuid``: Permite a criação de id's.
+
+- Bibliotec ``multer``: Permite fazer upload e leitura de arquivos
+
+
 # Cadastro de carro
 
 **RF**
