@@ -1,4 +1,4 @@
-import { Response } from 'express';
+import { Request, Response } from 'express';
 import { CreateCategoryUseCase } from "./CreateCategoryUseCase";
 
 class CreateCategoryController {
@@ -14,3 +14,4 @@ class CreateCategoryController {
 }
 
 export { CreateCategoryController };
+
