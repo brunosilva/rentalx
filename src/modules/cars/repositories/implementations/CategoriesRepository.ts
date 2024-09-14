@@ -1,20 +1,29 @@
 import { Category } from "../../../../modules/cars/model/Category";
-import { ICreateCategoryDTO } from "./ICategoriesRepository";
+import { ICategoriesRepository, ICreateCategoryDTO } from "../ICategoriesRepository";
 
-class CategoriesRepository {
-
+class CategoriesRepository implements ICategoriesRepository {
   private categories: Category[];
 
-  constructor() {
+  private static INSTANCE: ICategoriesRepository;
+
+  private constructor() {
     this.categories = [];
+  }
+
+  public static getInstance(): CategoriesRepository {
+
+    if(!CategoriesRepository.INSTANCE){
+      CategoriesRepository.INSTANCE = new CategoriesRepository();
+    }
+    return CategoriesRepository.INSTANCE;
   }
 
   create({name, description}: ICreateCategoryDTO): void {
     // "new Category()" é a chamada do construtor para criar o id.
     const category = new Category();
 
-    // tudo que colocar dentro do onj assign vai ser atribuido automaticamente ao
-    // "catgory" passado no 1° parametro!
+    // tudo que colocar dentro do obj assign vai ser atribuido automaticamente ao
+    // "category" passado no 1° parametro!
     Object.assign(category, {
       name,
       description,
