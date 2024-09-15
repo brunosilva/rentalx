@@ -14,6 +14,8 @@
 - ``yarn add @types/multer -D``: tipagens para o multer
 - ``yarn add csv-parse``: Permite a leitura do arquivo de forma mais gradativa (linha por linha) no exemplo com csv
 - ``yarn add @types/csv-parse -D``: tipagens para o csv-parse
+- ``yarn add swagger-ui-express``: Biblioteca para fazer documentação das rotas
+- ``yarn add @types/swagger-ui-express``: tipagens para o swagger-ui-express (Biblioteca para fazer documentação)
 
 
 # Cadastro de carro
